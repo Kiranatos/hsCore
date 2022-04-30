@@ -30,7 +30,12 @@
         <a href="img/07.jpg" target="_blank">
             <img src="img/07.jpg" width="300" height="300">
         </a>
-        <p>Блоггер для линукса выбрал WMSVGA:</p>
+        <p>Блоггер для линукса выбрал WMSVGA:</p>		
+		<p>VBoxSVGA: Default for Windows. Linux or Windows > 7</p>
+		<p>VBoxVGA: old OS or Windows < 7</p>
+		<p>VMSVGA: Default for Linux. Emulates a VMWare device, probably best when your VM was originally set up on VMWare and has their tools installed may not be as fast as VBox cards because it's trying to be compatible with something else.</p>
+		<p>None: no graphics adapter. i.e. you want to run the machine headless or over SSH and don't need the overhead of it emulating graphics. Could improve performance as it removes a layer or emulation.</p>
+		
         <a href="img/08.jpg" target="_blank">
             <img src="img/08.jpg" width="300" height="200">
         </a>
@@ -48,7 +53,28 @@
             <img src="img/12.jpg" width="300" height="200">
         </a>
 	
+	<p>To change desktop resolution one of possible actions:</p>
+	<p>a) In window of VM: View > Virtual Screen 1 > Resize to ... . If option non-acive - try to close and restart guest OS as normally: via the button START</p>
+	<p>b) In main window: File > Preferences > Display > Hint</p>
+	<a href="img/13_resolution.jpg" target="_blank">
+			<img src="img/13_resolution.jpg" width="300" height="200">
+	</a>
     
-        <div>TODO write content</div>
+	<br><br><br><br>
+        <div>Tasks for future:</div>
+		<a href="https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html" target="_blank">
+            VMware Workstation 
+        </a>
+		<br>
+		<a href="https://www.kali.org/docs/virtualization/install-vmware-guest-vm/" target="_blank">
+            Kali inside VMware (Guest VM)
+        </a>
+		<br>
+		<a href="https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/" target="_blank">
+            Kali inside VirtualBox (Guest VM)
+        </a>
+		<br>
+		<p>Docker</p>
+		
     </body>
 </html>
