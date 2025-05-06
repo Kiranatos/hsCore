@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../help/css/style.css" rel="stylesheet" type="text/css">
+    <title>JavaScript Core Summary. Chapter 1.</title>
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Terms:</h1>
+      <p>JavaScript — язык программирования сценариев(script) со слабой типизацией и динамическим приведением типов.</p>
+      <p>Язык сценариев — язык системной интеграции. Языки, которые работают с готовыми программными компонентами.</p>
+      <p>Приклади движків JavaScript: MS Internet Explorer 11, MS Edge, Gecko (Moz;//a), Webkit (Safari), Blink (Chrome, Chromium, Opera, Yandex...)</p>
+      <p>DOM — Document Object Model. Работа со страницей: разметка, события</p>
+      <p>BOM — Browser Object Model. работа с браузером: история, хранилища, окно, cookies, таймеры, таймауты</p>
+      <p>Программирование = Алгоритмы + Структуры данных</p>
+
+      <h1>Варінти підключення JavaScript:</h1>
+
+      <p>- JavaScript-код в блоці <span>body</span>: <a href="ch001/ex1001.html" title="Приклад 1001" target="_blank">Example 1001</a><p>
+      <p>- JavaScript-файл в блоці <span>head</span>: <a href="ch001/ex1002.html" title="Приклад 1002" target="_blank">Example 1002</a>.
+        Але так як html-документ виконується порядково, то спочатку завантажиться і виконається JavaScript-файл. І тільки потім продовжиться прорисовка наступних тегів документа.
+        Більш того: якщо скриптам буде потрібен якись html-об'єкт нижче, який ще не намальований, - то виникне помилка.<p>
+      <p>- Тому JavaScript-файл можна підключити в кінці блоку <span>body</span>: <a href="ch001/ex1003.html" title="Приклад 1003" target="_blank">Example 1003</a>.
+        Щоб спочатку загрузився весь документ, а вже потім виконався сам скріпт.<p>
+
+
+
+
+
+
+
+              <p>Чтобы не подключать в конце html-файла, в файле javascript нужно добавить метод-шапку(для ожидания формирования DOM-дерева) из библиотеки
+                <a href="../../help/help_jquery_1.html" target="_blank">JQuery</a> - которая позволяет дожидаться загрузки документа:<p>
+              <div class="block comment">
+                  <p>$(document).ready(function(){</p>
+                  <p>...........</p>
+                  <p>});</p>
+              </div>
+      <p>Её сокращённый вариант:<p>
+              <div class="block comment">
+                  <p>$(function(){</p>
+                  <p>...........</p>
+                  <p>});</p>
+              </div>
+
+  </div>
+</body>
+</html>

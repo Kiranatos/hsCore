@@ -1,0 +1,55 @@
+/* General css-help-file for all chapters */
+
+body {
+	background-attachment: fixed;
+	background-color: #40E7FA;
+	background-image: url(../_img/bgImage.jpg);
+	background-repeat: repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h1 {
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+}
+
+.wrapper {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	background-position: center center;
+	background-color: #FFFFFF;
+	padding: 10px;
+	height: auto;
+	width: 1050px;
+	border: thin solid #FF00FF;
+	font-style: normal;
+	font-weight: normal;
+	left: auto;
+	right: auto;
+	top: auto;
+	bottom: auto;
+	clip: rect(auto,auto,auto,auto);
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 25px;
+	margin-left: auto;
+}
+
+.codeFromTxtFile {
+	width: 1000px;
+	background-color : #ede89d;
+	border: thin solid #FF00FF;
+}
+
+.demoCodeFromTxtFile {
+	color: inherit;
+	width: 1000px;
+	background-color : inherit;
+	border: thin solid #FF00FF;
+}
